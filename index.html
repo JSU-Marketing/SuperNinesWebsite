@@ -312,11 +312,11 @@
        HERO
     ============================================================ */
     #hero {
-      position: relative; min-height: 100dvh;
+      position: relative; min-height: 120dvh;
       display: flex; flex-direction: column;
       align-items: stretch;
       text-align: center; overflow: hidden;
-      background: url('assets/gallery/2025-11.jpg') center center / cover no-repeat;
+      background: url('assets/gallery/2025-11.jpg') center 25% / cover no-repeat;
       /* top padding clears the floating navbar */
       padding-top: calc(var(--nav-bar-h) + 28px);
     }
@@ -387,7 +387,7 @@
     .hero-presented strong { color: var(--accent); font-weight: 700; }
 
     .hero-actions {
-      display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
+      display: flex; gap: 48px; justify-content: center; flex-wrap: wrap;
       margin-top: 48px;
       opacity: 0; animation: fadeUp 0.6s ease forwards; animation-delay: 1.05s;
     }
