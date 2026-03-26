@@ -1118,9 +1118,7 @@
   <nav id="navbar" aria-label="Main navigation">
     <div class="nav-left">
       <div class="nav-logo-slot">
-        <!-- TODO: Replace this placeholder with your logo:
-             <img src="your-logo.png" alt="Super Nines" class="nav-logo-img"> -->
-        <div class="nav-logo-placeholder" aria-hidden="true"></div>
+        <img src="assets/super-nines-logo.png" alt="Super Nines" class="nav-logo-img">
         <div class="nav-brand">
           <a href="#hero" class="nav-logo">Super <em>Nines</em></a>
           <span class="nav-sponsor">Sponsored by <strong>Meekever Sports</strong></span>
@@ -1322,8 +1320,17 @@
       <h2 class="section-title"><span class="hl">Photo Gallery</span></h2>
       <p class="section-sub">Click a year to browse the full collection of photos from that day.</p>
     </div>
-    <!-- TODO: Replace picsum images with real event photos -->
+    <!-- TODO: Replace picsum images with real event photos for 2024, 2023, 2022 -->
     <div class="year-cards">
+      <div class="year-card reveal" onclick="openYear('2025')">
+        <img class="year-card-img" src="assets/gallery/2025-1.jpg" alt="Super Nines 2025 highlights" loading="lazy" />
+        <div class="year-card-overlay"></div>
+        <div class="year-card-body">
+          <div class="year-card-year">2025</div>
+          <div class="year-card-count">10 Photos</div>
+          <div class="year-card-cta"><i class="fas fa-images"></i> View Gallery</div>
+        </div>
+      </div>
       <div class="year-card reveal" onclick="openYear('2024')">
         <img class="year-card-img" src="https://picsum.photos/seed/gaa2024cover/800/1100" alt="Super Nines 2024 highlights" loading="lazy" />
         <div class="year-card-overlay"></div>
@@ -1492,7 +1499,7 @@
   <footer id="footer">
     <div class="footer-top">
       <div class="footer-brand">
-        <a href="#hero" class="footer-logo">Super <em>Nines</em></a>
+        <a href="#hero" class="footer-logo"><img src="assets/super-nines-logo.png" alt="Super Nines" style="height:60px;object-fit:contain;display:block;margin-bottom:8px;"></a>
         <p>The Ultimate Schools Showdown. GAA competition at its finest — bringing schools and communities together since 2021. Proudly sponsored by Meekever Sports.</p>
         <p style="font-size:0.78rem; color:rgba(255,255,255,0.25); letter-spacing:1px;">Title Sponsor: <span style="color:var(--accent);font-weight:700;">Meekever Sports</span></p>
         <!-- TODO: Update social media links -->
@@ -1702,6 +1709,21 @@
        GALLERY — Year Modal
     ============================================= */
     const YEAR_DATA = {
+      '2025': {
+        label: 'Super Nines 2025 — Full Photoshoot',
+        photos: [
+          { src: 'assets/gallery/2025-1.jpg',  alt: '2025 — Photo 1' },
+          { src: 'assets/gallery/2025-2.jpg',  alt: '2025 — Photo 2' },
+          { src: 'assets/gallery/2025-3.jpg',  alt: '2025 — Photo 3' },
+          { src: 'assets/gallery/2025-4.jpg',  alt: '2025 — Photo 4' },
+          { src: 'assets/gallery/2025-5.jpg',  alt: '2025 — Photo 5' },
+          { src: 'assets/gallery/2025-6.jpg',  alt: '2025 — Photo 6' },
+          { src: 'assets/gallery/2025-7.jpg',  alt: '2025 — Photo 7' },
+          { src: 'assets/gallery/2025-8.jpg',  alt: '2025 — Photo 8' },
+          { src: 'assets/gallery/2025-9.jpg',  alt: '2025 — Photo 9' },
+          { src: 'assets/gallery/2025-10.jpg', alt: '2025 — Photo 10' },
+        ]
+      },
       '2024': {
         label: 'Super Nines 2024 — Full Photoshoot',
         photos: [
